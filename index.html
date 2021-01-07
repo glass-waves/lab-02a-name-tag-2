@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+
     <div class="site-container">
         <div class="left">
             <header>
@@ -14,41 +16,51 @@
             </header>
             <main>
                 <div class="nametag-container">
-                    <section class="top red">
+                    <section class="top red" id="top-color">
                         <h1>HELLO</h1>
                         <h2>my name is</h2>
                     </section>
                 
                     <section class="middle">
-                        <p>Dylan</p>
+                        <p id="name">Dylan</p>
+                        <p id="pronouns-display">Pronouns</p>
                     </section>
                 
-                    <section class="bottom red">
+                    <section class="bottom red" id="bottom-color">
                     
                     </section>
                 </div>
             </main>
             <footer>
-                <p>I am a footer.</p>
+                <div>    
+                    <p>
+                        Choose a new name!
+                    </p>
+                    <input type="text" id="name-input">
+                    <button id="name-button">
+                        Change Name
+                    </button>
+                </div>
+
+                <div>
+                    <h2>Select your Pronouns</h2>
+                    <input type="text" id="pronoun-input">
+                    <button id="pronoun-button">Change Pronouns</button>
+                </div>
+            
             
             </footer>
         </div>
         <div class="sidebar">
             <h2>
-                This is a sidebar.
+                How many times name has been changed:
             </h2>
-            <ul>
-                <li>This</li>
-                <li>is</li>
-                <li>a</li>
-                <li>list</li>
-                <li>of</li>
-                <li>things</li>
-            </ul>
-
+            <h2 id="name-counter">0</h2>
+            <button id="color-button">Push for a random nametag color</button>
         </div>
     </div>
 
+    <script type="module" src="app.js"></script>
     
 </body>
-</html>
+</html> 
